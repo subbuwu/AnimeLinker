@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&family=Ubuntu:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;600;700&display=swap');
+
+a {
+  text-decoration: none;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #00ADB5;
+}
+
+.container {
+  max-width: 100%;
+  height: 100%;
+}
+
+.container-flex {
+  display: flex;
+  gap: 8em;
+}
+
+.header {
+  width: 100%;
+  height: 100px;
+  background-color: #393E46;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar {
+  width: 100%;
+  display: flex;
+  gap: 10rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav--header {
+  color: #FFBDF7;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 600;
+  font-size: 40px;
+  cursor: pointer;
+}
+
+.nav--span {
+  color: #FFE7A0;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 400;
+  font-size: 40px;
+  opacity: 80%;
+  cursor: pointer;
+}
+
+
+aside {
+  width: 150px;
+  display: inline-block;
+}
+
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-left: 90px;
+}
+
+.navbar a {
+  text-decoration: none;
+}
+
+.sidebar--header {
+  margin-top: 70px;
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  text-align: center;
+  color: #000;
+}
+
+.sidebar--list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+  margin-top: 20px;
+}
+
+.sidebar--list li {
+  display: block;
+	padding: 8px 16px;
+  text-align: left;
+	color: #888;
+	font-size: 16px;
+	margin-bottom: 16px;
+  width: 280px;
+	background-color: #EEEEEE;
+	border-radius: 999px;
+	transition: 0.4s ease-in-out;
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+li a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.sidebar--list li:hover {
+  background-color: #313131;
+  color: #AAA;
+}
+
+.user--input {
+  width: 300px;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 20px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 900;
+  transition: 0.4s ease-in-out;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+  color: black;
+}
+
+
+.user--input:hover {
+  opacity: 60%;
+}
+
+.main--wrapper {
+  margin-left: auto;
+  flex-grow: 1;
+}
+
+.main--card--container {
+  padding: 30px;
+  width: 100%;
+}
+
+.main--card--container div {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.main--animecard {
+  background-color: #F7FFE5;
+  width: 350px;
+  height: 380px;
+  margin-inline: 15px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  gap: 2px;
+  border: 2px solid #313131;
+  border-radius: 20px;
+  overflow: hidden; 
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2); 
+  transition: box-shadow 0.3s ease-in-out; 
+  padding: 8px;
+  transform: translateY(0);
+  transition: transform 0.3s ease-in-out;
+}
+
+.main--animecard:hover {
+  transform: translateY(-5px); 
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3); 
+}
+
+.main--animecard img {
+  width: 100%;
+  height: 230px;
+  object-fit: cover; 
+  border-radius: 20px; 
+}
+
+.main--animecard--header {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  padding: 10px; 
+  background-color: #393E46; 
+  color: #fff; 
+  border-radius: 20px;
+  margin-top: 10px;
+}
+
+
+.main--animecard h4 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  padding: 10px; 
+  background-color: #FFBDF7; 
+  color: #fff; 
+  border-radius: 20px;
+  margin-top: 10px;
+}
+
+
+
+.loading--text{
+  font-size: large;
+  color: #FFE7A0;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media only screen and (max-width:740px) {
+  .sidebar--list li {
+    width: 200px;
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width:670px) {
+  .navbar {
+    gap: 5rem;
+  }
+  .user--input {
+    width: 240px;
+  }
+  .sidebar {
+    margin-left: 35px;
+  }
+}
+
+@media only screen and (max-width:530px) {
+  .header {
+    width: 100%;
+  }
+  .user--input {
+    padding: 5px 10px;
+    width: 120px;
+  }
+  .nav--header,.nav--span {
+    font-size: 2rem;
+  }
+  .sidebar {
+    margin-left: 5px;
+  }
+  .sidebar h1 {
+    font-size: 16px;
+    margin-top: 10px;
+  }
+  .sidebar--list li {
+    padding: 4px 10px;
+    font-size: 10px;
+    width: 150px;
+  }
+  .main--animecard--header {
+    padding: 4px 10px;
+    font-size: 12px;
+  }
+  .main--animecard {
+    width: 195px;
+    height: 210px;
+  }
+  .main--animecard img {
+    width: 140px;
+    height: 100px;
+  }
+  .main--animecard h4 {
+    padding: 4px 10px;
+    font-size: 10px;
+    margin-right: 2px;
+  }
+  .main--card--container {
+    padding: 0;
+    margin-top: 10px;
+  }
+
+  .topmost {
+    width: 100%;
+    height: auto;
+  }
+  .container-flex {
+    gap: 0;
+  }
+
+  .user--input::placeholder{
+    font-size: 14px;
+  }
+}
